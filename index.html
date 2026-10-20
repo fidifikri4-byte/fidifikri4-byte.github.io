@@ -213,7 +213,7 @@
             </div>
           </div>
 
-          <!-- Photocard: ganti assets/profile.jpg dengan foto portrait Anda. -->
+          <!-- Photocard: ganti assets/fikri.jpg dengan foto portrait Anda. -->
           <div class="hero-anim mx-auto w-full max-w-[300px] lg:mx-0 lg:max-w-none lg:justify-self-end"
             style="animation-delay:.55s">
             <div class="relative">
@@ -222,7 +222,7 @@
               <figure
                 class="group relative flex items-center gap-3 rounded-2xl border border-white/10 bg-[#121316]/80 p-2.5 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.9)] backdrop-blur-xl transition-transform duration-500 lg:block lg:-rotate-2 lg:hover:rotate-0">
                 <div class="relative w-20 shrink-0 overflow-hidden rounded-xl lg:w-full">
-                  <img src="assets/profile.jpg" alt="Foto portrait Fikri Fidiansah"
+                  <img src="assets/fikri.jpeg" alt="Foto portrait Fikri Fidiansah"
                     class="aspect-[4/5] h-full w-full object-cover object-[center_28%] grayscale brightness-90 contrast-105 transition duration-700 group-hover:grayscale-0 group-hover:brightness-100"
                     loading="lazy" decoding="async" />
                   <div
@@ -346,6 +346,15 @@
                       class="rounded-md border border-zinc-700/60 bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">CSS</span>
                     <span
                       class="rounded-md border border-zinc-700/60 bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">JavaScript</span>
+                    <span
+                      class="rounded-md border border-zinc-700/60 bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">Tailwind
+                      CSS</span>
+                    <span
+                      class="rounded-md border border-zinc-700/60 bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">Responsive
+                      Design</span>
+                    <span
+                      class="rounded-md border border-zinc-700/60 bg-zinc-800 px-3 py-1 text-xs font-medium text-zinc-200 transition-colors hover:border-sky-400/40 hover:text-white">Git
+                      &amp; GitHub</span>
                   </div>
                 </div>
 
@@ -425,8 +434,8 @@
           4. data-category kartu menentukan filter: "ui", "web", atau "game".
         -->
         <div id="projectsGrid" class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
-          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl"
-            data-category="ui" data-reveal>
+          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl" data-category="ui"
+            data-reveal>
             <div
               class="relative flex h-52 flex-col overflow-hidden border-b border-white/5 bg-gradient-to-br from-zinc-800 to-zinc-950 p-6">
               <div class="relative z-10 flex items-start justify-between">
@@ -434,38 +443,27 @@
                   class="rounded border border-sky-400/20 bg-black/60 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-sky-300">UI/UX</span>
                 <span class="font-mono text-xs text-zinc-400">2026</span>
               </div>
-              <!-- Ganti blok preview ini dengan screenshot project:
-                <img src="assets/preview-project-1.jpg" alt="Preview Project 1"
-                  class="h-full w-full object-cover" loading="lazy" decoding="async" /> -->
               <div
-                class="relative z-10 mt-4 flex flex-1 items-center justify-center rounded-lg border border-dashed border-white/15 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
-                <div class="flex flex-col items-center gap-1.5 text-center">
-                  <svg class="h-6 w-6 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                    </path>
-                  </svg>
-                  <p class="font-mono text-[10px] uppercase tracking-wider text-zinc-500">Preview Project 1</p>
-                </div>
+                class="relative z-10 mt-4 flex-1 overflow-hidden rounded-lg border border-white/10 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
+                <img src="assets/preview-project-1.jpg" alt="Preview desain aplikasi mobile Foodie"
+                  class="h-full w-full object-cover" style="object-position: center 30%" loading="lazy"
+                  decoding="async" />
               </div>
             </div>
             <div class="flex flex-1 flex-col justify-between p-6">
               <div>
-                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Judul Project
-                  1</h3>
-                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Deskripsi singkat project 1: masalah
-                  yang dipecahkan, peran kamu, dan hasil yang dicapai.</p>
+                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Foodie</h3>
+                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Desain aplikasi mobile untuk memesan
+                  makanan dan minuman: pencarian, kategori, promo, dan rekomendasi restoran dengan alur yang sederhana.
+                </p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    1</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Figma</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    2</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">UI
+                    Design</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    3</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Prototyping</span>
                 </div>
               </div>
               <div class="flex items-center justify-between border-t border-white/5 pt-4">
@@ -479,14 +477,17 @@
                     </path>
                   </svg>
                 </button>
-                <span class="font-mono text-xs text-zinc-400">Link Project</span>
+                <a href="https://www.figma.com/design/fJbqAok2koenIoeioc66Cb/projek-fikrifidiansah-pplg2?node-id=0-1&t=j73ZryvH8FPXTIgF-1"
+                  target="_blank" rel="noopener noreferrer"
+                  class="font-mono text-xs font-semibold text-zinc-400 transition-colors hover:text-sky-400">Figma
+                  Prototype &nearr;</a>
               </div>
             </div>
           </article>
 
           <!-- Project 2 -->
-          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl"
-            data-category="web" data-reveal>
+          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl" data-category="web"
+            data-reveal>
             <div
               class="relative flex h-52 flex-col overflow-hidden border-b border-white/5 bg-gradient-to-br from-zinc-900 to-neutral-950 p-6">
               <div class="relative z-10 flex items-start justify-between">
@@ -495,38 +496,28 @@
                   Platform</span>
                 <span class="font-mono text-xs text-zinc-400">2026</span>
               </div>
-              <!-- Ganti blok preview ini dengan screenshot project:
-                <img src="assets/preview-project-2.jpg" alt="Preview Project 2"
-                  class="h-full w-full object-cover" loading="lazy" decoding="async" /> -->
               <div
-                class="relative z-10 mt-4 flex flex-1 items-center justify-center rounded-lg border border-dashed border-white/15 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
-                <div class="flex flex-col items-center gap-1.5 text-center">
-                  <svg class="h-6 w-6 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                    </path>
-                  </svg>
-                  <p class="font-mono text-[10px] uppercase tracking-wider text-zinc-500">Preview Project 2</p>
-                </div>
+                class="relative z-10 mt-4 flex-1 overflow-hidden rounded-lg border border-white/10 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
+                <img src="assets/preview-project-2.jpg" alt="Preview desain website Lintasberita"
+                  class="h-full w-full object-cover" loading="lazy" decoding="async" />
               </div>
             </div>
             <div class="flex flex-1 flex-col justify-between p-6">
               <div>
-                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Judul Project
-                  2</h3>
-                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Deskripsi singkat project 2: masalah
-                  yang dipecahkan, peran kamu, dan hasil yang dicapai.</p>
+                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Lintasberita
+                </h3>
+                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Desain portal berita dengan headline
+                  utama, navigasi kategori, dan daftar berita terkini. Hierarki konten dibuat agar mudah dipindai
+                  pembaca.</p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    1</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Figma</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    2</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">UI
+                    Design</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    3</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Web
+                    Design</span>
                 </div>
               </div>
               <div class="flex items-center justify-between border-t border-white/5 pt-4">
@@ -540,53 +531,45 @@
                     </path>
                   </svg>
                 </button>
-                <span class="font-mono text-xs text-zinc-400">Link Project</span>
+                <a href="https://github.com/fidifikri4-byte/Website-Berita" target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-mono text-xs font-semibold text-zinc-400 transition-colors hover:text-sky-400">Source
+                  Code &nearr;</a>
               </div>
             </div>
           </article>
 
           <!-- Project 3 -->
-          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl"
-            data-category="game" data-reveal>
+          <article class="project-card group glass-card flex flex-col overflow-hidden rounded-2xl" data-category="game"
+            data-reveal>
             <div
               class="relative flex h-52 flex-col overflow-hidden border-b border-white/5 bg-gradient-to-br from-neutral-800 to-zinc-900 p-6">
               <div class="relative z-10 flex items-start justify-between">
                 <span
                   class="rounded border border-violet-400/20 bg-black/60 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-violet-300">Game</span>
-                <span class="font-mono text-xs text-zinc-400">2026</span>
+                <span class="font-mono text-xs text-zinc-400">2025</span>
               </div>
-              <!-- Ganti blok preview ini dengan screenshot project:
-                <img src="assets/preview-project-3.jpg" alt="Preview Project 3"
-                  class="h-full w-full object-cover" loading="lazy" decoding="async" /> -->
               <div
-                class="relative z-10 mt-4 flex flex-1 items-center justify-center rounded-lg border border-dashed border-white/15 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
-                <div class="flex flex-col items-center gap-1.5 text-center">
-                  <svg class="h-6 w-6 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
-                    </path>
-                  </svg>
-                  <p class="font-mono text-[10px] uppercase tracking-wider text-zinc-500">Preview Project 3</p>
-                </div>
+                class="relative z-10 mt-4 flex-1 overflow-hidden rounded-lg border border-white/10 bg-zinc-900/60 transition-transform duration-500 group-hover:scale-105">
+                <img src="assets/preview-project-3.jpg" alt="Preview game Flyping Blue"
+                  class="h-full w-full object-cover" loading="lazy" decoding="async" />
               </div>
             </div>
             <div class="flex flex-1 flex-col justify-between p-6">
               <div>
-                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Judul Project
-                  3</h3>
-                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Deskripsi singkat project 3: masalah
-                  yang dipecahkan, peran kamu, dan hasil yang dicapai.</p>
+                <h3 class="mb-2 text-xl font-bold text-white transition-colors group-hover:text-sky-400">Flyping Blue
+                </h3>
+                <p class="mb-4 line-clamp-3 text-sm leading-relaxed text-zinc-400">Game 2D bergaya Flappy Bird: terbang
+                  melewati celah pipa, kumpulkan skor, dan hindari tabrakan. Dibuat dengan Scratch.</p>
                 <div class="mb-6 flex flex-wrap gap-2">
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    1</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Scratch</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    2</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Game
+                    Design</span>
                   <span
-                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">Tech
-                    3</span>
+                    class="rounded border border-white/5 bg-zinc-900 px-2 py-0.5 font-mono text-[11px] text-zinc-400">2D
+                    Game</span>
                 </div>
               </div>
               <div class="flex items-center justify-between border-t border-white/5 pt-4">
@@ -600,7 +583,9 @@
                     </path>
                   </svg>
                 </button>
-                <span class="font-mono text-xs text-zinc-400">Link Project</span>
+                <a href="game/index.html"
+                  class="font-mono text-xs font-semibold text-zinc-400 transition-colors hover:text-sky-400">Mainkan
+                  Game &rarr;</a>
               </div>
             </div>
           </article>
@@ -711,7 +696,7 @@
         <span id="dialogYear" class="font-mono text-xs text-zinc-400">2026</span>
       </div>
 
-      <h3 id="dialogTitle" class="mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl">Judul Project 1</h3>
+      <h3 id="dialogTitle" class="mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl">Detail Project</h3>
       <p id="dialogDesc" class="mt-3 text-sm leading-relaxed text-zinc-400"></p>
 
       <dl class="mt-6 grid grid-cols-2 gap-4 rounded-xl border border-white/5 bg-zinc-900/50 p-4">
@@ -731,6 +716,16 @@
       </div>
 
       <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div id="dialogPlayWrap" class="hidden flex-1">
+          <a id="dialogPlay" href="game/index.html"
+            class="inline-flex w-full items-center justify-center gap-2 rounded-full border border-sky-400/60 bg-sky-500/10 px-6 py-3 text-sm font-semibold text-sky-300 transition hover:bg-sky-500/20">
+            <span id="dialogLinkLabel">Mainkan Game</span>
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
         <a href="#contact" data-modal-contact
           class="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-sky-400 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-sky-300">
           Diskusikan Project Serupa
@@ -742,7 +737,7 @@
       </div>
     </div>
   </dialog>
-  <script src="script.js"></script>
+  <script src="script.js?v=20261020"></script>
 </body>
 
 </html>

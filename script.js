@@ -213,31 +213,39 @@
       const dialog = $('#projectDialog');
       const projectData = {
         project1: {
-          title: 'Judul Project 1',
+          title: 'Foodie',
           category: 'UI/UX',
           year: '2026',
-          description: 'Deskripsi detail project 1. Jelaskan latar belakang masalah, proses desain, peran kamu dalam tim, dan hasil akhir yang dicapai.',
+          description: 'Foodie adalah konsep aplikasi mobile untuk memesan makanan dan minuman. Saya merancang tampilan beranda, pencarian, kategori makanan dan minuman, promo, hingga kartu restoran. Fokus desainnya adalah membuat proses menemukan makanan terasa cepat dan menyenangkan, dengan navigasi sederhana dan visual menu yang mudah dipindai.',
           role: 'UI/UX Designer',
-          platform: 'Web & Mobile',
-          tech: ['Tech 1', 'Tech 2', 'Tech 3']
+          platform: 'Mobile App',
+          tech: ['Figma', 'UI Design', 'Prototyping'],
+          link: 'https://www.figma.com/design/fJbqAok2koenIoeioc66Cb/projek-fikrifidiansah-pplg2?node-id=0-1&t=j73ZryvH8FPXTIgF-1',
+          linkLabel: 'Buka Prototype',
+          external: true
         },
         project2: {
-          title: 'Judul Project 2',
+          title: 'Lintasberita',
           category: 'Web Platform',
           year: '2026',
-          description: 'Deskripsi detail project 2. Jelaskan latar belakang masalah, proses desain, peran kamu dalam tim, dan hasil akhir yang dicapai.',
-          role: 'Web Developer & UI Designer',
+          description: 'Lintasberita adalah desain portal berita yang menempatkan berita utama sebagai fokus halaman. Saya menyusun tata letak navigasi, kartu headline dengan badge trending, serta daftar berita terkini agar pembaca dapat menemukan informasi penting dengan cepat. Palet biru gelap dengan aksen oranye dipakai untuk memberi kesan tegas dan mudah dikenali.',
+          role: 'UI/UX Designer & Web Designer',
           platform: 'Website',
-          tech: ['Tech 1', 'Tech 2', 'Tech 3']
+          tech: ['Figma', 'UI Design', 'Web Design'],
+          link: 'https://github.com/fidifikri4-byte/Website-Berita',
+          linkLabel: 'Lihat Source Code',
+          external: true
         },
         project3: {
-          title: 'Judul Project 3',
+          title: 'Flyping Blue',
           category: 'Game',
-          year: '2026',
-          description: 'Deskripsi detail project 3. Jelaskan latar belakang masalah, proses desain, peran kamu dalam tim, dan hasil akhir yang dicapai.',
-          role: 'UI/UX Designer',
-          platform: 'Web & Mobile',
-          tech: ['Tech 1', 'Tech 2', 'Tech 3']
+          year: '2025',
+          description: 'Flyping Blue adalah game 2D bergaya Flappy Bird yang dibuat dengan Scratch. Pemain mengendalikan burung biru untuk terbang melewati celah pipa, menghindari tabrakan, dan mengumpulkan skor sebanyak mungkin. Saya merancang mekanik permainan, tampilan antarmuka menu, hingga alur game over-nya.',
+          role: 'Game Designer & Developer',
+          platform: 'Web (Scratch)',
+          tech: ['Scratch', 'Game Design', '2D Game'],
+          link: 'game/index.html',
+          linkLabel: 'Mainkan Game'
         }
       };
 
@@ -251,6 +259,26 @@
         $('#dialogDesc').textContent = data.description;
         $('#dialogRole').textContent = data.role;
         $('#dialogPlatform').textContent = data.platform;
+
+        const linkWrap = $('#dialogPlayWrap');
+        const link = $('#dialogPlay');
+        const linkLabel = $('#dialogLinkLabel');
+        if (linkWrap && link) {
+          if (data.link) {
+            link.setAttribute('href', data.link);
+            if (data.external) {
+              link.setAttribute('target', '_blank');
+              link.setAttribute('rel', 'noopener noreferrer');
+            } else {
+              link.removeAttribute('target');
+              link.removeAttribute('rel');
+            }
+            if (linkLabel) linkLabel.textContent = data.linkLabel || 'Buka Project';
+            linkWrap.classList.remove('hidden');
+          } else {
+            linkWrap.classList.add('hidden');
+          }
+        }
 
         const techBox = $('#dialogTech');
         techBox.innerHTML = '';
